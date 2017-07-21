@@ -1,0 +1,12 @@
+@import '_list_menu';
+
+.order-cancel-btn{
+	margin-left: 15px;
+}
+.order-total-price{
+	margin-top: 10px;
+	font-size: 14px;
+	&-num{
+		font-size: 15px;
+	}
+}

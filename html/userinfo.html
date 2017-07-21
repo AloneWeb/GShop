@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>G商城--用户中心</title>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/userinfo.css">
+</head>
+<body>
+	<div class="wrapper">
+
+		<!-- S header 顶部-->
+		<div class="header-wraper">
+			<div class="header">
+				<div class="ant-row">
+					<div class="ant-col-4">
+						<a href="./login.html" class="header-link">登录</a>
+						<a href="./register.html" class="header-link">注册</a>
+					</div>
+					<div class="ant-col-6 ant-col-offset-14" >
+						<div class="ant-row">
+							<a  href="./shopcart.html" class="ant-col-6 header-link"><i class="fa fa-shopping-cart"></i> 购物车 (0)</a>
+							<a href="./order-list.html" class="ant-col-6 header-link">我的订单</a>
+							<a href="./userinfo.html" class="ant-col-6 header-link">我的GShop</a>
+							<a href="./about.html" class="ant-col-6 header-link">关于GShop</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- E header 顶部-->
+
+		<!-- S logo-search Logo及搜索栏-->
+		<div class="logo-search ant-row">
+			<div class="ant-col-6">
+				<div class="logo-wrapper">
+					<a href="./index.html" class="logo"><img src="../image/logo.png" width="120" alt="LOGO"></a>
+				</div>
+			</div>
+			<div class="search-wrapper ant-col-18">
+				 <form action="" method="post">
+				 <div class="dib-wrapper search">
+				    <input placeholder="请输入商品名称" type="text" name="searchText" class="dib search-input"/>
+				    <button type="submit" class="dib search-btn">
+				    	<i class="fa fa-search"></i>
+				    </button>
+			  </div>
+		    </form>
+			</div>
+		</div>
+		<!-- E logo-search Logo及搜索栏-->
+
+		<!-- S header-nav-wrapper -->
+		<div class="header-nav-wrapper">
+			<div class="header-nav">
+				<a href="./index.html">GShop</a>
+				<i class="fa fa-fw fa-angle-right"></i>
+				<a href="">个人中心</a>
+			</div>
+		</div>
+		<!-- E header-nav-wrapper -->
+
+		<!-- S 个人信息  -->
+		<div class="hor-center ant-row">
+			<div class="ant-col-3 list-menu">
+				<li><a class="link-active" href="./userinfo.html">个人中心</a></li>
+				<li><a class="" href="./order-list.html">我的订单</a></li>
+				<li><a class="" href="./pass-update.html">修改密码</a></li>
+				<li><a class="" href="./about.html">关于GShop</a></li>
+			</div>
+			<div class="ant-col-21">
+				<div class="panel">
+					<div class="panel-title">我的信息</div>
+					<div class="panel-body">
+						<form action="" method="post">
+
+						<div class="ant-row">
+							<div class="msg ant-col-8 hidden" id="msg">
+								<i class="fa fa-fw fa-minus-circle errmsg-icon"></i>
+								<span class="errmsg-text" id="errmsg-text"></span>
+							</div>
+						</div>
+
+						<div class="panel-list ant-row">
+							<div class="ant-col-2 info-label">用户名:</div>
+							<div class="ant-col-6 text-bold info-label info-show">GShop</div>
+							<div class="ant-col-6 hidden info-edit">
+								<input id="userName" class="input-sm form-control" type="text" name="userName">
+							</div>
+						</div>
+						<div class="panel-list ant-row">
+							<div class="ant-col-2 info-label">真实姓名:</div>
+							<div class="ant-col-6 text-bold info-label info-show">GShop</div>
+							<div class="ant-col-6 hidden info-edit">
+								<input id="realName" class="input-sm form-control" type="text" name="userName">
+							</div>
+						</div>
+						<div class="panel-list ant-row">
+							<div class="ant-col-2 info-label">电话:</div>
+							<div class="ant-col-6 text-bold info-label info-show">15012345678</div>
+							<div class="ant-col-6 hidden info-edit">
+								<input id="tel" class="input-sm form-control" type="text" name="userName">
+							</div>
+						</div>
+						<div class="panel-list ant-row">
+							<div class="ant-col-2 info-label">邮箱:</div>
+							<div class="ant-col-6 text-bold info-label info-show">123@qq.com</div>
+							<div class="ant-col-6  hidden info-edit">
+								<input id="email" class="input-sm form-control" type="text" name="userName">
+							</div>
+						</div>
+						<div class="panel-list ant-row">
+							<div class="ant-col-2 info-label">性别:</div>
+							<div class="ant-col-6 text-bold info-label info-show">保密</div>
+							<div class="ant-col-6  hidden info-edit">
+								<select name="sex" class="form-control">
+									<option value="男">男</option>
+									<option value="女">女</option>
+									<option value="保密">保密</option>
+								</select>
+							</div>
+						</div>
+						<div class="panel-list ant-row">
+							<div class="ant-col-2 info-label">密保问题:</div>
+							<div class="ant-col-6 text-bold info-label info-show">我是谁？</div>
+							<div class="ant-col-6 hidden info-edit">
+								<input id="question" class="input-sm form-control" type="text" name="userName">
+							</div>
+						</div>
+						<div class="panel-list ant-row">
+							<div class="ant-col-2 info-label">密保答案:</div>
+							<div class="ant-col-6 text-bold info-label info-show">GShop</div>
+							<div class="ant-col-6 hidden info-edit">
+								<input  id="answer" class="input-sm form-control" type="text" name="userName">
+							</div>
+						</div>
+						<div class="panel-list">
+							<span class="g-btn" id="edit-btn"> 编 辑 </span>
+							<div class="hidden" id="save-cancel-btns">
+								<button type="submit" class="btn btn-sm btn-success" id="regBtn"> 保 存 </button>
+								<span class="btn btn-sm btn-warning ml-20" id="cancel-btn"> 取 消 </span>
+							</div>
+						</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- E 个人信息 -->
+
+		<!-- S footer 尾栏 -->
+		<div class="footer-wrapper">
+      <div class="footer">
+        <div class="links ant-row">
+              <div class="ant-col-6">
+                <a target="_blank" href="https://www.baidu.com">百度</a>
+              </div>
+              <div class="ant-col-6">
+                <a target="_blank" href="https://www.jd.com">京东</a>
+              </div>
+              <div class="ant-col-6">
+                <a target="_blank" href="https://www.taobao.com">淘宝</a>
+              </div>
+              <div class="ant-col-6">
+                <a target="_blank" href="https://www.tmall.com">天猫</a>
+              </div>
+        </div>
+        <div class="copyright">
+          CopyRight &copy; 2017 AloneWeb All Rights Reserved
+        </div>
+      </div>
+    </div>
+		<!-- E footer 尾栏 -->
+	</div>
+	<script src="../js/jquery-1.12.4.min.js"></script>
+	<script src="../js/bootstrap.js"></script>
+	<script src="../js/MyJsLibs.js"></script>
+	<script src="../js/userinfo.js"></script>
+</body>
+</html>

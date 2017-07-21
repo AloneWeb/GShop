@@ -1,0 +1,27 @@
+.logo{
+  display: inline-block;
+  vertical-align:top;
+  & img{
+  display: inline-block;
+  vertical-align: middle;  	
+  }
+}
+.search{
+  margin-top: 45px;
+  &-input{
+  height: 40px;
+  width: 600px;
+  outline:none;
+  padding: 5px 10px;
+  border:2px solid #C60023;
+  vertical-align: top;    
+  }
+  &-btn{
+  height: 40px;
+  width: 60px;
+  border:none;
+  background-color: #C60023;
+  color:#fff;
+  font-size: 26px !important;
+  }
+}

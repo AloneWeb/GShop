@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>G商城--我的购物车</title>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/shopcart.css">
+</head>
+<body>
+	<div class="wrapper">
+
+		<!-- S 特定功能区块 -->
+
+		<!-- /顶部提示 -->
+		<div id="tips" class="tips-wrapper" style="display: none;">
+			<div class="tips-warning">
+				<i class="fa fa-fw fa-info-circle"></i> <span id="tipsText" class="tips-text"></span>
+			</div>
+		</div>
+
+		<!-- E 特定功能区块 -->
+
+		<!-- S header 顶部-->
+		<div class="header-wraper">
+			<div class="header">
+				<div class="ant-row">
+					<div class="ant-col-4">
+						<a href="./login.html" class="header-link">登录</a>
+						<a href="./register.html" class="header-link">注册</a>
+					</div>
+					<div class="ant-col-6 ant-col-offset-14" >
+						<div class="ant-row">
+							<a  href="./shopcart.html" class="ant-col-6 header-link"><i class="fa fa-shopping-cart"></i> 购物车 (0)</a>
+							<a href="./order-list.html" class="ant-col-6 header-link">我的订单</a>
+							<a href="./userinfo.html" class="ant-col-6 header-link">我的GShop</a>
+							<a href="./about.html" class="ant-col-6 header-link">关于GShop</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- E header 顶部-->
+
+		<!-- S logo-search Logo及搜索栏-->
+		<div class="logo-search ant-row">
+			<div class="ant-col-6">
+				<div class="logo-wrapper">
+					<a href="./index.html" class="logo"><img src="../image/logo.png" width="120" alt="LOGO"></a>
+				</div>
+			</div>
+			<div class="search-wrapper ant-col-18">
+				 <form action="" method="post">
+				 <div class="dib-wrapper search">
+				    <input placeholder="请输入商品名称" type="text" name="searchText" class="dib search-input"/>
+				    <button type="submit" class="dib search-btn">
+				    	<i class="fa fa-search"></i>
+				    </button>
+			  </div>
+		    </form>
+			</div>
+		</div>
+		<!-- E logo-search Logo及搜索栏-->
+
+		<!-- S header-nav-wrapper -->
+		<div class="header-nav-wrapper">
+			<div class="header-nav">
+				<a href="./index.html">GShop</a>
+				<i class="fa fa-fw fa-angle-right"></i>
+				<a href="">我的购物车</a>
+			</div>
+		</div>
+		<!-- E header-nav-wrapper -->
+		
+		<!-- S shopcart 购物车 -->
+		<div class="shopcart">
+			<!-- /购物车头部 -->
+			<div class="ant-row cart-header">
+				<div class="ant-col-4 cart-cell">
+				  <input  type="checkbox" id="checkAllHeader" name="" class="checkbox-all"> 
+				  <label class="check-label" for="checkAllHeader">全选</label>
+				</div>
+				<div class="ant-col-8 cart-header-cell">商品信息</div>
+				<div class="ant-col-3 text-center cart-header-cell">单价</div>
+				<div class="ant-col-3 text-center cart-header-cell">数量</div>
+				<div class="ant-col-3 text-center cart-header-cell">合计</div>
+				<div class="ant-col-3 text-center cart-header-cell">操作</div>
+			</div>
+			<!-- /购物车头部 -->
+
+			<!-- /购物车列表内容 -->
+			<div class="cart-body">
+				<div class="ant-col-4">
+					<input type="checkbox" name="" class="checkbox-list">
+					<a class="cart-img" href=""><img src="../image/aircond.png" width="80"  alt=""></a>
+				</div>
+				<div class="ant-col-8">
+					<a href="" class="link-cell">Haier/海尔 KFR-33GW/10EBBAL13U1 1.5匹 空调挂机 智能操控</a>
+				</div>
+				<div class="ant-col-3 text-center cart-body-cell">
+					&yen;<span class="unit-price">2099</span>
+				</div>
+				<div class="ant-col-3 text-center select-number">
+					<button type="button" class="btn btn-sm btn-info btn-plus-minus num-minus"><i class="fa fa-fw fa-minus"></i></button>
+					<input class="buy-nums" type="text"  name="" value="1" data-limit="10">
+					<button type="button"  class="btn btn-sm btn-info btn-plus-minus num-plus">
+						<i class="fa fa-fw fa-plus"></i>
+					</button>
+				</div>
+				<div class="ant-col-3 text-center cart-header-cell cart-body-cell price-total">
+					&yen;<span>2099</span>
+				</div>
+				<div class="ant-col-3 text-center cart-body-cell">
+					<a class="btn btn-danger btn-sm" href=""><i class="fa fa-fw fa-trash"></i> 删 除 </a>
+				</div>
+			</div>
+
+			<div class="cart-body">
+				<div class="ant-col-4">
+					<input type="checkbox" name="" class="checkbox-list">
+					<a class="cart-img" href=""><img src="../image/aircond.png" width="80"  alt=""></a>
+				</div>
+				<div class="ant-col-8">
+					<a href="" class="link-cell">Haier/海尔 KFR-33GW/10EBBAL13U1 1.5匹 空调挂机 智能操控</a>
+				</div>
+				<div class="ant-col-3 text-center cart-body-cell">
+					&yen;<span class="unit-price">2099</span>
+				</div>
+				<div class="ant-col-3 text-center select-number">
+					<button type="button" class="btn btn-sm btn-info btn-plus-minus num-minus">
+						<i class="fa fa-fw fa-minus"></i>
+					</button>
+					<input  class="buy-nums" type="text" name="" value="1"  data-limit="20">
+					<button type="button"  class="btn btn-sm btn-info btn-plus-minus num-plus">
+						<i class="fa fa-fw fa-plus"></i>
+					</button>
+				</div>
+				<div class="ant-col-3 text-center cart-header-cell cart-body-cell price-total">
+					&yen;<span>2099</span>
+				</div>
+				<div class="ant-col-3 text-center cart-body-cell">
+					<a class="btn btn-danger btn-sm" href=""><i class="fa fa-fw fa-trash"></i> 删 除 </a>
+				</div>
+			</div>
+			<!-- /购物车列表内容 -->
+
+			<!-- /购物车底部 -->
+			<div class="cart-footer">
+				<div class="ant-col-4">
+					<input type="checkbox" id="checkAllFooter" name=""  class="checkbox-all"> 
+					<label class="check-label" for="checkAllFooter">全选</label>
+					<a class="del-sel" href=""><i class="fa fa-fw fa-trash"></i>删除选中</a>
+				</div>
+				<div class="ant-col-3 ant-col-offset-14 total-price-wrapper">总价:<span class="total-price"> &yen;<span id="priceAll">2099</span> </span></div>
+				<a href="./order-confirm.html" class="ant-col-3 settle-account">去结算</a>
+			</div>
+			<!-- /购物车底部 -->
+
+		</div>
+		<!-- E shopcart 购物车 -->
+
+		<!-- S footer 尾栏 -->
+		<div class="footer-wrapper">
+      <div class="footer">
+        <div class="links ant-row">
+              <div class="ant-col-6">
+                <a target="_blank" href="https://www.baidu.com">百度</a>
+              </div>
+              <div class="ant-col-6">
+                <a target="_blank" href="https://www.jd.com">京东</a>
+              </div>
+              <div class="ant-col-6">
+                <a target="_blank" href="https://www.taobao.com">淘宝</a>
+              </div>
+              <div class="ant-col-6">
+                <a target="_blank" href="https://www.tmall.com">天猫</a>
+              </div>
+        </div>
+        <div class="copyright">
+          CopyRight &copy; 2017 AloneWeb All Rights Reserved
+        </div>
+      </div>
+    </div>
+		<!-- E footer 尾栏 -->
+	</div>
+	<script src="../js/jquery-1.12.4.min.js"></script>
+	<script src="../js/bootstrap.js"></script>
+	<script src="../js/dataBind.js"></script>
+	<script src="../js/MyJsLibs.js"></script>
+	<script src="../js/shopcart.js"></script>
+</body>
+</html>

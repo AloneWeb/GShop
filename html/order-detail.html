@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>G商城--订单详情</title>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/order-detail.css">
+</head>
+<body>
+	<div class="wrapper">
+
+		<!-- S header 顶部-->
+		<div class="header-wraper">
+			<div class="header">
+				<div class="ant-row">
+					<div class="ant-col-4">
+						<a href="./login.html" class="header-link">登录</a>
+						<a href="./register.html" class="header-link">注册</a>
+					</div>
+					<div class="ant-col-6 ant-col-offset-14" >
+						<div class="ant-row">
+							<a  href="" class="ant-col-6 header-link"><i class="fa fa-shopping-cart"></i> 购物车 (0)</a>
+							<a href="" class="ant-col-6 header-link">我的订单</a>
+							<a href="" class="ant-col-6 header-link">我的GShop</a>
+							<a href="" class="ant-col-6 header-link">关于GShop</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- E header 顶部-->
+
+		<!-- S logo-search Logo及搜索栏-->
+		<div class="logo-search ant-row">
+			<div class="ant-col-6">
+				<div class="logo-wrapper">
+					<a href="./index.html" class="logo"><img src="../image/logo.png" width="120" alt="LOGO"></a>
+				</div>
+			</div>
+			<div class="search-wrapper ant-col-18">
+				 <form action="" method="post">
+				 <div class="dib-wrapper search">
+				    <input placeholder="请输入商品名称" type="text" name="searchText" class="dib search-input"/>
+				    <button type="submit" class="dib search-btn">
+				    	<i class="fa fa-search"></i>
+				    </button>
+			  </div>
+		    </form>
+			</div>
+		</div>
+		<!-- E logo-search Logo及搜索栏-->
+
+		<!-- S header-nav-wrapper -->
+		<div class="header-nav-wrapper">
+			<div class="header-nav">
+				<a href="./index.html">GShop</a>
+				<i class="fa fa-fw fa-angle-right"></i>
+				<a href="">订单详情</a>
+			</div>
+		</div>
+		<!-- E header-nav-wrapper -->
+
+		<!-- S 订单详情  -->
+		<div class="hor-center ant-row">
+			<div class="ant-col-3 list-menu">
+				<li><a class="" href="./userinfo.html">个人中心</a></li>
+				<li><a class="link-active" href="order-list.html">我的订单</a></li>
+				<li><a class="" href="./pass-update.html">修改密码</a></li>
+				<li><a class="" href="./about.html">关于GShop</a></li>
+			</div>
+			<div class="ant-col-21">
+				<div class="panel">
+					<div class="panel-title">订单信息</div>
+					<div class="panel-body">
+						<div class="panel-list">
+							订单号：1499732306981 
+							创建时间：2017-07-11 08:18:26
+						</div>
+						<div class="panel-list">收件人：aaaa 北京 北京 121212212</div>
+						<div class="panel-list">订单状态：<span id='pay-status'>未支付</span></div>
+						<div class="panel-list">支付方式：在线支付</div>
+						<div id="order-detail-btns">
+							<a href="" class="g-btn">去支付</a>
+							<span class="g-btn order-cancel-btn">取消订单</span>
+						</div>
+					</div>
+				</div>
+				<div class="panel">
+					<div class="panel-title">商品清单</div>
+					<div class="g-table">
+					<div class="g-table-header ant-row text-bolder">
+						<div class="ant-col-12 ant-col-offset-3">商品信息</div>
+						<div class="ant-col-3">单价</div>
+						<div class="ant-col-3">数量</div>
+						<div class="ant-col-3">合计</div>
+					</div>
+					<div class="g-table-body">
+							<div class="g-table-list ant-row">
+								<div class="ant-col-3">
+									<a href="" class="g-table-img-link">
+										<img src="../image/aircond.png" width="80" alt="">
+									</a>
+								</div>
+								<div class="ant-col-12">
+									<a href="" class="g-table-muti-cell">
+										Haier/海尔 KFR-33GW/10EBBAL13U1 1.5匹 空调挂机 智能操控
+									</a>
+								</div>
+								<div class="ant-col-3 g-table-ver-ali">&yen; 2099</div>
+								<div class="ant-col-3 g-table-ver-ali">1</div>
+								<div class="ant-col-3 g-table-ver-ali">&yen; 2099</div>
+							</div>
+							<div class="g-table-list ant-row">
+								<div class="ant-col-3">
+									<a href="" class="g-table-img-link">
+										<img src="../image/aircond.png" width="80" alt="">
+									</a>
+								</div>
+								<div class="ant-col-12">
+									<a href="" class="g-table-muti-cell">
+										Haier/海尔 KFR-33GW/10EBBAL13U1 1.5匹 空调挂机 智能操控
+									</a>
+								</div>
+								<div class="ant-col-3 g-table-ver-ali">&yen; 2099</div>
+								<div class="ant-col-3 g-table-ver-ali">1</div>
+								<div class="ant-col-3 g-table-ver-ali">&yen; 2099</div>
+							</div>
+							<div class="order-total-price ant-row">
+								<div class="ant-col-3 ant-col-offset-20">
+									订单总价:<span class="text-bolder text-theme order-total-price-num">&yen; 4198</span>
+								</div>
+							</div>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+		<!-- E 订单详情 -->
+
+		<!-- S footer 尾栏 -->
+		<div class="footer-wrapper">
+      <div class="footer">
+        <div class="links ant-row">
+              <div class="ant-col-6">
+                <a target="_blank" href="https://www.baidu.com">百度</a>
+              </div>
+              <div class="ant-col-6">
+                <a target="_blank" href="https://www.jd.com">京东</a>
+              </div>
+              <div class="ant-col-6">
+                <a target="_blank" href="https://www.taobao.com">淘宝</a>
+              </div>
+              <div class="ant-col-6">
+                <a target="_blank" href="https://www.tmall.com">天猫</a>
+              </div>
+        </div>
+        <div class="copyright">
+          CopyRight &copy; 2017 AloneWeb All Rights Reserved
+        </div>
+      </div>
+    </div>
+		<!-- E footer 尾栏 -->
+	</div>
+	<script src="../js/jquery-1.12.4.min.js"></script>
+	<script src="../js/bootstrap.js"></script>
+	<script src="../js/order-detail.js"></script>
+</body>
+</html>

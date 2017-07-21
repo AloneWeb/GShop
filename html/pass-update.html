@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>G商城--修改密码</title>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/pass-update.css">
+</head>
+<body>
+	<div class="wrapper">
+
+		<!-- S header 顶部-->
+		<div class="header-wraper">
+			<div class="header">
+				<div class="ant-row">
+					<div class="ant-col-4">
+						<a href="./login.html" class="header-link">登录</a>
+						<a href="./register.html" class="header-link">注册</a>
+					</div>
+					<div class="ant-col-6 ant-col-offset-14" >
+						<div class="ant-row">
+							<a  href="" class="ant-col-6 header-link"><i class="fa fa-shopping-cart"></i> 购物车 (0)</a>
+							<a href="" class="ant-col-6 header-link">我的订单</a>
+							<a href="" class="ant-col-6 header-link">我的GShop</a>
+							<a href="" class="ant-col-6 header-link">关于GShop</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- E header 顶部-->
+
+		<!-- S logo-search Logo及搜索栏-->
+		<div class="logo-search ant-row">
+			<div class="ant-col-6">
+				<div class="logo-wrapper">
+					<a href="./index.html" class="logo"><img src="../image/logo.png" width="120" alt="LOGO"></a>
+				</div>
+			</div>
+			<div class="search-wrapper ant-col-18">
+				 <form action="" method="post">
+				 <div class="dib-wrapper search">
+				    <input placeholder="请输入商品名称" type="text" name="searchText" class="dib search-input"/>
+				    <button type="submit" class="dib search-btn">
+				    	<i class="fa fa-search"></i>
+				    </button>
+			  </div>
+		    </form>
+			</div>
+		</div>
+		<!-- E logo-search Logo及搜索栏-->
+
+		<!-- S header-nav-wrapper -->
+		<div class="header-nav-wrapper">
+			<div class="header-nav">
+				<a href="./index.html">GShop</a>
+				<i class="fa fa-fw fa-angle-right"></i>
+				<a href="">修改密码</a>
+			</div>
+		</div>
+		<!-- E header-nav-wrapper -->
+
+		<!-- S 修改密码  -->
+		<div class="hor-center ant-row">
+			<div class="ant-col-3 list-menu">
+				<li><a class="" href="./userinfo.html">个人中心</a></li>
+				<li><a class="" href="./order-list.html">我的订单</a></li>
+				<li><a class="link-active" href="./pass-update.html">修改密码</a></li>
+				<li><a class="" href="./about.html">关于GShop</a></li>
+			</div>
+			<div class="ant-col-21">
+				<div class="panel">
+					<div class="panel-title">修改密码</div>
+					<div class="panel-body">
+					<div class="ant-row">
+						<div class="msg hidden ant-col-8" id="msg">
+							<i class="fa fa-fw fa-minus-circle errmsg-icon"></i>
+							<span class="errmsg-text" id="errmsg-text"></span>
+						</div>
+					<!-- 	<div class="msg ant-col-8 bg-success" id="msg">
+							<i class="fa fa-fw fa-check-circle sucmsg-icon"></i>
+							<span class="errmsg-text" id="errmsg-text">密码修改成功!</span>
+						</div> -->
+					</div>
+					
+						<div class="ant-row form-group">
+							<label for="oldPass" class="ant-col-2 control-label pass-update-label">原始密码:</label>
+							<div class="ant-col-6">
+								<input id="oldPass" type="password" name="" class="input-sm form-control">
+							</div>
+						</div>
+						<div class="ant-row form-group">
+							<label for="newPass" class="ant-col-2 control-label pass-update-label">新密码:</label>
+							<div class="ant-col-6">
+								<input id="newPass" type="password" name="" class="form-control input-sm">
+							</div>
+						</div>
+						<div class="ant-row form-group">
+							<label for="rePass" class="ant-col-2 control-label pass-update-label">密码确认:</label>
+							<div class="ant-col-6">
+								<input id="rePass" type="password" name="" class="form-control input-sm">
+							</div>
+						</div>
+						<button type="button" class="g-btn" id="updatePassBtn">提交修改</button>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- E 修改密码 -->
+
+		<!-- S footer 尾栏 -->
+		<div class="footer-wrapper">
+      <div class="footer">
+        <div class="links ant-row">
+              <div class="ant-col-6">
+                <a target="_blank" href="https://www.baidu.com">百度</a>
+              </div>
+              <div class="ant-col-6">
+                <a target="_blank" href="https://www.jd.com">京东</a>
+              </div>
+              <div class="ant-col-6">
+                <a target="_blank" href="https://www.taobao.com">淘宝</a>
+              </div>
+              <div class="ant-col-6">
+                <a target="_blank" href="https://www.tmall.com">天猫</a>
+              </div>
+        </div>
+        <div class="copyright">
+          CopyRight &copy; 2017 AloneWeb All Rights Reserved
+        </div>
+      </div>
+    </div>
+		<!-- E footer 尾栏 -->
+	</div>
+	<script src="../js/jquery-1.12.4.min.js"></script>
+	<script src="../js/bootstrap.js"></script>
+	<script src="../js/MyJsLibs.js"></script>
+	<script src="../js/pass-update.js"></script>
+</body>
+</html>

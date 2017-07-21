@@ -1,0 +1,22 @@
+@import '_list_menu';
+
+.myorder{
+	width: 1100px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+.order-list{
+	&-wrapper{
+		padding:20px 10px;
+		background-color: #fff;
+	}
+	&-title{
+		padding:5px 10px;
+		font-size: 14px;
+		font-weight: 600;
+		color:#666;
+		margin-bottom: 10px;
+		border-bottom:1px solid #eee;
+	}
+}
+

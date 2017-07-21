@@ -1,0 +1,45 @@
+.rece-info{
+	&-show{
+		background-color: #f6f6f6;
+		border:3px dashed #ccc;
+		height: 110px;
+		cursor:pointer;
+		&[data-check=true]{
+			border-color:$theme-color;
+		}
+		&:hover{
+			background-color: #eee;
+			& .rece-info-edit{
+				display: block;
+			}
+		}
+	}
+	&-title{
+		border-bottom:1px solid #ddd;
+		padding: 5px 0;
+	}
+	&-body{
+		padding: 5px 0;
+	}
+	&-edit{
+		display: none;
+	}
+	&-list{
+		padding: 2px 0 2px 0;
+	}
+	&-empty{
+		color:#999;
+		font-size: 14px;
+		&-icon{
+			font-size: 40px;
+			font-weight: 650;
+		}
+	}
+}
+
+.submit-order{
+	color:#fff !important;
+}
+.addr-select{
+	margin-right: 10px;	
+}

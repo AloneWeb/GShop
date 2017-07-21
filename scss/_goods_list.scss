@@ -1,0 +1,47 @@
+.goods-list{
+	width: 1100px;
+	margin: 0 auto;
+	min-height:500px;
+}
+.sort-btn{
+	display: inline-block;
+	padding:3px 8px;
+	background-color: #fff;
+	border:1px solid #aaa;
+	cursor:pointer;
+	margin-top: 15px;
+}
+.sort-active{
+	background-color: $theme-color;
+	border-color:$theme-color;
+	color:#fff;
+}
+.sort-active .icon-up-down[data-sort=up]{
+	.fa-caret-up{
+		color:#bbb;
+	}
+}
+.sort-active .icon-up-down[data-sort=down]{
+	.fa-caret-down{
+		color:#bbb;
+	}
+}
+.goods-sort{
+	height: 50px;
+}
+
+.icon-up-down{
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	position: relative;
+	vertical-align: top;
+	.fa-caret-up{
+		position: absolute;
+		top: -1px;
+	}
+	.fa-caret-down{
+		position: absolute;
+		bottom: -1px;
+	}
+}

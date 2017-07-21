@@ -1,0 +1,31 @@
+.cate{
+	&-title{
+  font-size: 20px;
+  padding:10px 5px;
+  border-bottom:1px solid;
+	}
+	&-body{
+  height: 220px;		
+	}
+}
+
+.cate-item-wrap{
+	 height: 100%;
+	 padding: 10px;
+}
+.cate-item{
+  display: inline-block;
+  height: 200px;
+  padding: 10px;
+  width: 100%;
+  background-color:#fff;
+  color:#666;
+  &-text{
+	  font-size: 16px;
+	  font-weight: 500;
+	}
+	&:hover{
+	  color:#666;
+	  box-shadow: 2px 2px 10px rgba(55,55,55,0.1);		
+	}
+}

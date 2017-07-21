@@ -1,0 +1,10 @@
+.header{
+  &-link{
+	 display: inline-block;
+	 text-align: center;
+   line-height: 30px;
+  }
+  &-left{
+    line-height: 30px;
+  }
+}

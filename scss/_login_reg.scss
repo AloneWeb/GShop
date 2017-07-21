@@ -1,0 +1,79 @@
+.logo{
+  display: inline-block;
+  vertical-align:top;
+  & img{
+  display: inline-block;
+  vertical-align: middle;
+  }
+}
+.logo-wrapper{
+	height: 80px;
+	line-height: 80px;
+	width: 260px;
+	text-align: center;
+}
+.login-reg{
+  height: 600px;
+  width: 1100px;
+  margin: 0 auto;
+  position: relative;
+  &-wrapper{
+    position: relative;
+    height: 600px;
+    background-color: #29B919;
+  }
+  &-banner{
+    display: inline-block;
+    position: absolute;
+    top: 160px;
+    left: 50px;
+    width: 600px;
+    height: 300px;
+  }
+}
+.login-wrapper{
+  position: absolute;
+  right:50px;
+  top: 50%;
+  width: 360px;
+  padding:20px;
+  height: 400px;
+  margin-top: -200px;
+  background-color: #fff;
+}
+.login-btn{
+  width: 100%;
+  background-color:$theme-color;
+  border:none;
+  outline:none;
+  color:#fff;
+  height: 35px;
+  font-size: 16px;
+}
+.input-group{
+  margin-bottom: 30px;
+  &-addon{
+    border-radius: 0;
+  }
+}
+.form-control{
+  border-radius: 0;
+}
+.form-links{
+  margin-top: 10px;
+}
+
+.register-wrapper{
+  position: absolute;
+  top: 0;
+  right:50px;
+  width: 360px;
+  padding:20px;
+  height: 600px;
+  background-color: #fff;
+  box-shadow: 2px 0 5px #666;
+}
+
+.input-group-reg{
+  margin-bottom: 12px;
+}
