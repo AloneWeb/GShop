@@ -22,9 +22,23 @@
 10. [个人中心](https://aloneweb.github.io/GShop/html/userinfo.html)
 11. [关于我们](https://aloneweb.github.io/GShop/html/about.html)
 
+### 用到的技术
+
+    UI库:bootstrap、Antd的栅格系统
+
+    js库:jQuery
+
+    css预处理：Sass
+
+    字体图标库：FontAwesome
+
 ### 待完善
 
 - 订单确认中的添加地址待完善
 - scss、js代码待优化
 - 没有密码找回、支付界面
 - 还有很多细节问题有待处理...
+
+### 界面参考
+
+    [Mall电商平台](http://happymmall.com/index.html)
