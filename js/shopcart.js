@@ -109,7 +109,6 @@ jQuery(function($){
             tool.tips("该商品已达最大限额!",1200);
           }
         }
-          
         NumVal = null;//垃圾回收
       });
     }
