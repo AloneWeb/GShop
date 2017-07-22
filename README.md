@@ -21,6 +21,7 @@
 9. [密码更新](https://aloneweb.github.io/GShop/html/pass-update.html)
 10. [个人中心](https://aloneweb.github.io/GShop/html/userinfo.html)
 11. [关于我们](https://aloneweb.github.io/GShop/html/about.html)
+12. [商城首页](https://aloneweb.github.io/GShop/html/)
 
 ### 用到的技术
 
