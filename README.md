@@ -41,4 +41,4 @@
 
 ### 界面参考
 
-    [Mall电商平台](http://happymmall.com/index.html)
+[Mall电商平台](http://happymmall.com/index.html)
