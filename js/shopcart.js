@@ -48,6 +48,13 @@ jQuery(function($){
           checkboxAllEles.prop('checked',flag);
         });
       });
+      //结算判断
+      $('#settle-account').click(function(event) {
+        if(parseInt($('#priceAll').text()) === 0){
+          event.preventDefault();
+          tool.tips("尚未选择商品！",1200);
+        }
+      });
     }
     //input中商品数量改变
     function inputChange(){
@@ -112,6 +119,7 @@ jQuery(function($){
         NumVal = null;//垃圾回收
       });
     }
+
     checkbox();
     inputChange();
   }

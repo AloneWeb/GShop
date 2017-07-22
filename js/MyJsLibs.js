@@ -1,5 +1,5 @@
 /**
- * 一些常用的函数：数值校验、精确度修复
+ * 工具库：数值校验、精确度修复、顶部提示
  * @Author    AloneWeb
  * @DateTime  2017-06-28
  * @copyright [AloneWeb]
@@ -7,15 +7,20 @@
  * @version   [1.0.0]
  */
 
+/**
+ * 一些工具方法
+ */
 var tool=(function($){
-
+  //顶部提示
   function tips(text,ms){
+    var ms = ms || 1000;
     $('#tips').hide();
     $('#tipsText').text(text);
     $('#tips').show('fast');
     setTimeout(function(){
       $('#tips').hide('fast');
     },ms);
+    ms = null;
   }
 
   return{

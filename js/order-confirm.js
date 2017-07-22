@@ -14,9 +14,29 @@ jQuery(function($){
     });
     $('#totalPri').text(sum);
   }
+  // 提交检查
+  function submitOrderCheck(){
+    $('.submit-order').click(function(event) {
+      // event.preventDefault();
+      var addrArr = $('.rece-info-show');
+      var flag = false;
+      addrArr.each(function(index, el) {
+        if($(this).attr('data-check') === 'true'){
+          flag =flag||true;
+        }
+      });
+      if(flag===false){
+        tool.tips('请选择收货地址！',1200);
+      }
+      return flag;
+    });
+  }
+
   receInfo();
   viewPri();
+  submitOrderCheck();
 
+  //初始化地址三级联动
   var addrOne = $('#addrOne');
   var addrTwo = $('#addrTwo');
   var addrTree = $('#addrTree');

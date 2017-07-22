@@ -1,13 +1,13 @@
 # GShop
 
 ### 简介
-    完整的商城系统前端，包含了前端验证和交互
+    完整的商城系统前端，包含了大部分前端验证和交互
 
 ### Demo
 
 [项目Demo](https://aloneweb.github.io/GShop/html/)
 
-> 因为是静态界面，可能有未链接的界面，在此列出所有的界面链接：
+> 因为是静态界面并未对接后台，可能有未链接的界面，在此列出所有的界面链接，
 > 注:首页只有'电脑'可以进入商城列表
 
 1. [商品列表](https://aloneweb.github.io/GShop/html/list.html)
@@ -23,7 +23,8 @@
 11. [关于我们](https://aloneweb.github.io/GShop/html/about.html)
 
 ### 待完善
+
 - 订单确认中的添加地址待完善
 - scss、js代码待优化
 - 没有密码找回、支付界面
-- More...
+- 还有很多细节问题有待处理...
