@@ -8,7 +8,7 @@
 [项目Demo](https://aloneweb.github.io/GShop/html/)
 
 > 因为是静态界面并未对接后台，可能有未链接的界面，在此列出所有的界面链接，
-> 注:首页只有'电脑'可以进入商城列表
+> 注:首页只有'电脑'可以进入商品列表
 
 1. [商品列表](https://aloneweb.github.io/GShop/html/list.html)
 2. [商品详情](https://aloneweb.github.io/GShop/html/detail.html)
