@@ -17,7 +17,6 @@ jQuery(function($){
   // 提交检查
   function submitOrderCheck(){
     $('.submit-order').click(function(event) {
-      // event.preventDefault();
       var addrArr = $('.rece-info-show');
       var flag = false;
       addrArr.each(function(index, el) {

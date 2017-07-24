@@ -409,11 +409,11 @@ var citySelect = function(){
     "香港特别行政区": {},
     "澳门特别行政区": {},
   };
+  // 初始化
   function init(one,two,tree){
     var domOpt;
     var selVal;
     var cityOne = [];
-    // var index = 0;
     for (city in citysObj) {
       domOpt = "<option value='"+city+"'>"+city+"</option>";
       one.append(domOpt);
