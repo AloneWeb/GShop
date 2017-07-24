@@ -1,233 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>G商城--订单确认</title>
-	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="../css/order-confirm.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>G商城--订单确认</title>
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/antd_grid.css">
+  <link rel="stylesheet" type="text/css" href="../css/order-confirm.css">
 </head>
+
 <body>
-	<div class="wrapper">
-		<!-- S 特定功能区块 -->
-		<!-- /顶部提示 -->
-		<div id="tips" class="tips-wrapper" style="display: none;">
-			<div class="tips-warning">
-				<i class="fa fa-fw fa-info-circle"></i> <span id="tipsText" class="tips-text"></span>
-			</div>
-		</div>
-		<!-- E 特定功能区块 -->
-
-		<!-- S header 顶部-->
-		<div class="header-wraper">
-			<div class="header">
-				<div class="ant-row">
-					<div class="ant-col-4">
-						<a href="./login.html" class="header-link">登录</a>
-						<a href="./register.html" class="header-link">注册</a>
-					</div>
-					<div class="ant-col-6 ant-col-offset-14" >
-						<div class="ant-row">
-							<a  href="" class="ant-col-6 header-link"><i class="fa fa-shopping-cart"></i> 购物车 (0)</a>
-							<a href="" class="ant-col-6 header-link">我的订单</a>
-							<a href="" class="ant-col-6 header-link">我的GShop</a>
-							<a href="" class="ant-col-6 header-link">关于GShop</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- E header 顶部-->
-
-		<!-- S logo-search Logo及搜索栏-->
-		<div class="logo-search ant-row">
-			<div class="ant-col-6">
-				<div class="logo-wrapper">
-					<a href="./index.html" class="logo"><img src="../image/logo.png" width="120" alt="LOGO"></a>
-				</div>
-			</div>
-			<div class="search-wrapper ant-col-18">
-				 <form action="" method="post">
-				 <div class="dib-wrapper search">
-				    <input placeholder="请输入商品名称" type="text" name="searchText" class="dib search-input"/>
-				    <button type="submit" class="dib search-btn">
-				    	<i class="fa fa-search"></i>
-				    </button>
-			  </div>
-		    </form>
-			</div>
-		</div>
-		<!-- E logo-search Logo及搜索栏-->
-
-		<!-- S header-nav-wrapper -->
-		<div class="header-nav-wrapper">
-			<div class="header-nav">
-				<a href="./index.html">GShop</a>
-				<i class="fa fa-fw fa-angle-right"></i>
-				<a href="">订单确认</a>
-			</div>
-		</div>
-		<!-- E header-nav-wrapper -->
-
-		<!-- S 订单确认 -->
-		<div class="hor-center">
-			<div class="rece-addr">
-				<div class="panel-title">收货地址</div>
-				<div class="rece-info ant-row">
-					<div class="ant-col-5 panel rece-info-show" data-check="false">
-						<div class="rece-info-title"><span>地址 详细地址</span> （ <span>某某</span> 收）</div>
-						<div class="rece-info-body clearfix">
-							<div class="rece-info-list">邮政编码:<span>330003</span></div>
-							<div class="rece-info-list">联系方式:<span>15012345678</span></div>
-							<div class="rece-info-edit pull-right">
-								<a href="#" data-toggle="modal" data-target="#editModal"> 编辑 </a>
-								<a href=""> 删除 </a>
-							</div>
-						</div>
-					</div>
-
-					<!-- /弹出地址修改模态框 -->
-					<div class="modal fade" id="editModal">
-				    <div class="modal-dialog">
-			        <div class="modal-content">
-		            <div class="modal-header">
-	                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-	                <h4 class="modal-title" id="myModalLabel">更新地址</h4>
-		            </div>
-		            <div class="modal-body">
-									<form action="" method="post">
-										<div class="ant-row form-group">
-											<label for="receName" class="ant-col-4 control-label pass-update-label">收件人姓名:</label>
-											<div class="ant-col-8">
-												<input id="receName" type="text" name="" class="form-control input-sm">
-											</div>
-										</div>
-										<div class="ant-row form-group">
-											<label for="receCity" class="ant-col-4 control-label pass-update-label">所在城市:</label>
-											<div class="ant-col-5 addr-select">
-												<select name="addrOne" class="form-control input-sm" id="addrOne">
-													<option value="0">--请选择--</option>
-												</select>
-											</div>
-											<div class="ant-col-5 addr-select">
-												<select name="addrTwo" class="form-control input-sm" id="addrTwo">
-													<option value="0">--请选择--</option>
-												</select>
-											</div>
-											<div class="ant-col-5 addr-select">
-												<select name="addrTree" class="form-control input-sm" id="addrTree">
-													<option value="0">--请选择--</option>
-												</select>
-											</div>
-										</div>
-										<div class="ant-row form-group">
-											<label for="receAddrDetail" class="ant-col-4 control-label pass-update-label">详细地址:</label>
-											<div class="ant-col-8">
-												<input id="receAddrDetail" type="text" name="" class="form-control input-sm">
-											</div>
-										</div>
-										<div class="ant-row form-group">
-											<label for="zipCode" class="ant-col-4 control-label pass-update-label">邮政编码:</label>
-											<div class="ant-col-8">
-												<input id="zipCode" type="text" name="" class="form-control input-sm">
-											</div>
-										</div>
-		            		<button type="submit" class="g-btn">保存修改</button>
-	            		</form>
-
-		            </div>
-			        </div><!-- /.modal-content -->
-				    </div><!-- /.modal -->
-					</div>
-					<!-- /弹出地址修改模态框 -->
-
-					<div class="ant-col-5 ant-col-offset-1 panel rece-info-show rece-info-empty">
-						<div class="text-center rece-info-empty-icon"><i class="fa fa-fw fa-plus"></i></div>
-						<div class="text-center">使用新地址</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="panel">
-					<div class="panel-title">商品清单</div>
-					<div class="g-table">
-					<div class="g-table-header ant-row text-bolder">
-						<div class="ant-col-12 ant-col-offset-3">商品描述</div>
-						<div class="ant-col-3">价格</div>
-						<div class="ant-col-3">数量</div>
-						<div class="ant-col-3">小计</div>
-					</div>
-					<div class="g-table-body">
-							<div class="g-table-list ant-row">
-								<div class="ant-col-3">
-									<a href="" class="g-table-img-link">
+  <div class="wrapper">
+    <!-- S 特定功能区块 -->
+    <!-- /顶部提示 -->
+    <div id="tips" class="tips-wrapper" style="display: none;">
+      <div class="tips-warning">
+        <i class="fa fa-fw fa-info-circle"></i> <span id="tipsText" class="tips-text"></span>
+      </div>
+    </div>
+    <!-- E 特定功能区块 -->
+    <!-- S header 顶部-->
+    <div class="header-wraper">
+      <div class="header">
+        <div class="ant-row">
+          <div class="ant-col-4">
+            <a href="./login.html" class="header-link">登录</a>
+            <a href="./register.html" class="header-link">注册</a>
+          </div>
+          <div class="ant-col-6 ant-col-offset-14">
+            <div class="ant-row">
+              <a href="" class="ant-col-6 header-link"><i class="fa fa-shopping-cart"></i> 购物车 (0)</a>
+              <a href="" class="ant-col-6 header-link">我的订单</a>
+              <a href="" class="ant-col-6 header-link">我的GShop</a>
+              <a href="" class="ant-col-6 header-link">关于GShop</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- E header 顶部-->
+    <!-- S logo-search Logo及搜索栏-->
+    <div class="logo-search ant-row">
+      <div class="ant-col-6">
+        <div class="logo-wrapper">
+          <a href="./index.html" class="logo"><img src="../image/logo.png" width="120" alt="LOGO"></a>
+        </div>
+      </div>
+      <div class="search-wrapper ant-col-18">
+        <form action="" method="post">
+          <div class="dib-wrapper search">
+            <input placeholder="请输入商品名称" type="text" name="searchText" class="dib search-input" />
+            <button type="submit" class="dib search-btn">
+              <i class="fa fa-search"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- E logo-search Logo及搜索栏-->
+    <!-- S header-nav-wrapper -->
+    <div class="header-nav-wrapper">
+      <div class="header-nav">
+        <a href="./index.html">GShop</a>
+        <i class="fa fa-fw fa-angle-right"></i>
+        <a href="">订单确认</a>
+      </div>
+    </div>
+    <!-- E header-nav-wrapper -->
+    <!-- S 订单确认 -->
+    <div class="hor-center">
+      <div class="rece-addr">
+        <div class="panel-title">收货地址</div>
+        <div class="rece-info ant-row">
+          <div class="ant-col-5 panel rece-info-show" data-check="false">
+            <div class="rece-info-title"><span>地址 详细地址</span> （ <span>某某</span> 收）</div>
+            <div class="rece-info-body clearfix">
+              <div class="rece-info-list">邮政编码:<span>330003</span></div>
+              <div class="rece-info-list">联系方式:<span>15012345678</span></div>
+              <div class="rece-info-edit pull-right">
+                <a href="#" data-toggle="modal" data-target="#editModal"> 编辑 </a>
+                <a href=""> 删除 </a>
+              </div>
+            </div>
+          </div>
+          <!-- /弹出地址修改模态框 -->
+          <div class="modal fade" id="editModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h4 class="modal-title" id="myModalLabel">更新地址</h4>
+                </div>
+                <div class="modal-body">
+                  <form action="" method="post">
+                    <div class="ant-row form-group">
+                      <label for="receName" class="ant-col-4 control-label pass-update-label">收件人姓名:</label>
+                      <div class="ant-col-8">
+                        <input id="receName" type="text" name="" class="form-control input-sm">
+                      </div>
+                    </div>
+                    <div class="ant-row form-group">
+                      <label for="receCity" class="ant-col-4 control-label pass-update-label">所在城市:</label>
+                      <div class="ant-col-5 addr-select">
+                        <select name="addrOne" class="form-control input-sm" id="addrOne">
+                          <option value="0">--请选择--</option>
+                        </select>
+                      </div>
+                      <div class="ant-col-5 addr-select">
+                        <select name="addrTwo" class="form-control input-sm" id="addrTwo">
+                          <option value="0">--请选择--</option>
+                        </select>
+                      </div>
+                      <div class="ant-col-5 addr-select">
+                        <select name="addrTree" class="form-control input-sm" id="addrTree">
+                          <option value="0">--请选择--</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="ant-row form-group">
+                      <label for="receAddrDetail" class="ant-col-4 control-label pass-update-label">详细地址:</label>
+                      <div class="ant-col-8">
+                        <input id="receAddrDetail" type="text" name="" class="form-control input-sm">
+                      </div>
+                    </div>
+                    <div class="ant-row form-group">
+                      <label for="zipCode" class="ant-col-4 control-label pass-update-label">邮政编码:</label>
+                      <div class="ant-col-8">
+                        <input id="zipCode" type="text" name="" class="form-control input-sm">
+                      </div>
+                    </div>
+                    <button type="submit" class="g-btn">保存修改</button>
+                  </form>
+                </div>
+              </div>
+              <!-- /.modal-content -->
+            </div>
+            <!-- /.modal -->
+          </div>
+          <!-- /弹出地址修改模态框 -->
+          <div class="ant-col-5 ant-col-offset-1 panel rece-info-show rece-info-empty">
+            <div class="text-center rece-info-empty-icon"><i class="fa fa-fw fa-plus"></i></div>
+            <div class="text-center">使用新地址</div>
+          </div>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="panel-title">商品清单</div>
+        <div class="g-table">
+          <div class="g-table-header ant-row text-bolder">
+            <div class="ant-col-12 ant-col-offset-3">商品描述</div>
+            <div class="ant-col-3">价格</div>
+            <div class="ant-col-3">数量</div>
+            <div class="ant-col-3">小计</div>
+          </div>
+          <div class="g-table-body">
+            <div class="g-table-list ant-row">
+              <div class="ant-col-3">
+                <a href="" class="g-table-img-link">
 										<img src="../image/aircond.png" width="80" alt="">
 									</a>
-								</div>
-								<div class="ant-col-12">
-									<a href="" class="g-table-muti-cell">
+              </div>
+              <div class="ant-col-12">
+                <a href="" class="g-table-muti-cell">
 										Haier/海尔 KFR-33GW/10EBBAL13U1 1.5匹 空调挂机 智能操控
 									</a>
-								</div>
-								<div class="ant-col-3 g-table-ver-ali">&yen; 2099</div>
-								<div class="ant-col-3 g-table-ver-ali">1</div>
-								<div class="ant-col-3 g-table-ver-ali">&yen; <span class="list-pri">2099</span></div>
-							</div>
-							<div class="g-table-list ant-row">
-								<div class="ant-col-3">
-									<a href="" class="g-table-img-link">
+              </div>
+              <div class="ant-col-3 g-table-ver-ali">&yen; 2099</div>
+              <div class="ant-col-3 g-table-ver-ali">1</div>
+              <div class="ant-col-3 g-table-ver-ali">&yen; <span class="list-pri">2099</span></div>
+            </div>
+            <div class="g-table-list ant-row">
+              <div class="ant-col-3">
+                <a href="" class="g-table-img-link">
 										<img src="../image/aircond.png" width="80" alt="">
 									</a>
-								</div>
-								<div class="ant-col-12">
-									<a href="" class="g-table-muti-cell">
+              </div>
+              <div class="ant-col-12">
+                <a href="" class="g-table-muti-cell">
 										Haier/海尔 KFR-33GW/10EBBAL13U1 1.5匹 空调挂机 智能操控
 									</a>
-								</div>
-								<div class="ant-col-3 g-table-ver-ali">&yen; 2099</div>
-								<div class="ant-col-3 g-table-ver-ali">1</div>
-								<div class="ant-col-3 g-table-ver-ali">&yen; <span class="list-pri">2099</span></div>
-							</div>
-							
-							<div class="g-table-footer">
-								<div class="ant-col-3 ant-col-offset-18">订单总价:<span class="text-bolder text-theme text-lg"> &yen;<span id="totalPri">0</span></span></div>
-								<a href="./order-list.html" class="ant-col-3 bg-theme text-center text-bolder text-md submit-order">提交订单</a>
-							</div>
-						</div>
-					</div>
-				</div>
-		</div>
-		<!-- E 订单确认 -->
-
-		<!-- S footer 尾栏 -->
-		<div class="footer-wrapper">
+              </div>
+              <div class="ant-col-3 g-table-ver-ali">&yen; 2099</div>
+              <div class="ant-col-3 g-table-ver-ali">1</div>
+              <div class="ant-col-3 g-table-ver-ali">&yen; <span class="list-pri">2099</span></div>
+            </div>
+            <div class="g-table-footer">
+              <div class="ant-col-3 ant-col-offset-18">订单总价:<span class="text-bolder text-theme text-lg"> &yen;<span id="totalPri">0</span></span>
+              </div>
+              <a href="./order-list.html" class="ant-col-3 bg-theme text-center text-bolder text-md submit-order">提交订单</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- E 订单确认 -->
+    <!-- S footer 尾栏 -->
+    <div class="footer-wrapper">
       <div class="footer">
         <div class="links ant-row">
-              <div class="ant-col-6">
-                <a target="_blank" href="https://www.baidu.com">百度</a>
-              </div>
-              <div class="ant-col-6">
-                <a target="_blank" href="https://www.jd.com">京东</a>
-              </div>
-              <div class="ant-col-6">
-                <a target="_blank" href="https://www.taobao.com">淘宝</a>
-              </div>
-              <div class="ant-col-6">
-                <a target="_blank" href="https://www.tmall.com">天猫</a>
-              </div>
+          <div class="ant-col-6">
+            <a target="_blank" href="https://www.baidu.com">百度</a>
+          </div>
+          <div class="ant-col-6">
+            <a target="_blank" href="https://www.jd.com">京东</a>
+          </div>
+          <div class="ant-col-6">
+            <a target="_blank" href="https://www.taobao.com">淘宝</a>
+          </div>
+          <div class="ant-col-6">
+            <a target="_blank" href="https://www.tmall.com">天猫</a>
+          </div>
         </div>
         <div class="copyright">
           CopyRight &copy; 2017 AloneWeb All Rights Reserved
         </div>
       </div>
     </div>
-		<!-- E footer 尾栏 -->
-	</div>
-	<script src="../js/jquery-1.12.4.min.js"></script>
-	<script src="../js/bootstrap.js"></script>
-	<script src="../js/MyJsLibs.js"></script>
-	<script src="../js/citySelect.js"></script>
-	<script src="../js/order-confirm.js"></script>
+    <!-- E footer 尾栏 -->
+  </div>
+  <script src="../js/jquery-1.12.4.min.js"></script>
+  <script src="../js/bootstrap.js"></script>
+  <script src="../js/MyJsLibs.js"></script>
+  <script src="../js/citySelect.js"></script>
+  <script src="../js/order-confirm.js"></script>
 </body>
+
 </html>

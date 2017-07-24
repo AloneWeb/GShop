@@ -4,7 +4,7 @@ jQuery(function($) {
 
     var arrEle = [];
 
-    //得到每个物品元素数组
+    //得到每个商品元素数组
     $('.list-item').each(function(index, el) {
       arrEle[index] = $(this);
     });

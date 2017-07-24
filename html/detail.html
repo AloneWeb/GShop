@@ -1,157 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>G商城--商品详情</title>
-	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="../css/detail.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>G商城--商品详情</title>
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/antd_grid.css">
+  <link rel="stylesheet" type="text/css" href="../css/detail.css">
 </head>
+
 <body>
-	<div class="wrapper">
-		<!-- S 特定功能区块 -->
-
-		<!-- /顶部提示 -->
-		<div id="tips" class="tips-wrapper" style="display: none;">
-			<div class="tips-warning">
-				<i class="fa fa-fw fa-info-circle"></i> <span id="tipsText" class="tips-text"></span>
-			</div>
-		</div>
-		<!-- E 特定功能区块 -->
-
-		<!-- S header 顶部-->
-		<div class="header-wraper">
-			<div class="header">
-				<div class="ant-row">
-					<div class="ant-col-4">
-						<a href="./login.html" class="header-link">登录</a>
-						<a href="./register.html" class="header-link">注册</a>
-					</div>
-					<div class="ant-col-6 ant-col-offset-14" >
-						<div class="ant-row">
-							<a  href="" class="ant-col-6 header-link"><i class="fa fa-shopping-cart"></i> 购物车 (0)</a>
-							<a href="" class="ant-col-6 header-link">我的订单</a>
-							<a href="" class="ant-col-6 header-link">我的GShop</a>
-							<a href="" class="ant-col-6 header-link">关于GShop</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- E header 顶部-->
-
-		<!-- S logo-search Logo及搜索栏-->
-		<div class="logo-search ant-row">
-			<div class="ant-col-6">
-				<div class="logo-wrapper">
-					<a href="./index.html" class="logo"><img src="../image/logo.png" width="120" alt="LOGO"></a>
-				</div>
-			</div>
-			<div class="search-wrapper ant-col-18">
-				 <form action="" method="post">
-					 <div class="dib-wrapper search">
-					    <input placeholder="请输入商品名称" type="text" name="searchText" class="dib search-input"/>
-					    <button type="submit" class="dib search-btn">
-					    	<i class="fa fa-search"></i>
-					    </button>
-				  </div>
-		    </form>
-			</div>
-		</div>
-		<!-- E logo-search Logo及搜索栏-->
-
-		<!-- S header-nav-wrapper -->
-		<div class="header-nav-wrapper">
-			<div class="header-nav">
-				<a href="./index.html">GShop</a>
-				<i class="fa fa-fw fa-angle-right"></i>
-				<a href="">商品详情</a>
-			</div>
-		</div>
-		<!-- E header-nav-wrapper -->
-
-		<!-- S goods-detail 商品详情 -->
-		<div class="goods-detail">
-			<div class="detail-show ant-row">
-				<div class="ant-col-9 detail-img-main">
-					<img id="imgMain" src="../image/detail_pc_big_1.jpg" width="100%" height="400" alt="">
-					<div class="ant-row" id="imgSub">
-						<div class="ant-col-6 detail-img-sub">
-							<img src="../image/detail_pc_big_1.jpg" width="100%" alt="">
-						</div>
-						<div class="ant-col-6 detail-img-sub">
-							<img src="../image/detail_pc_big_2.jpg" width="100%" alt="">
-						</div>
-						<div class="ant-col-6 detail-img-sub">
-							<img src="../image/detail_pc_big_3.jpg" width="100%" alt="">
-						</div>
-						<div class="ant-col-6 detail-img-sub">
-							<img src="../image/detail_pc_big_4.jpg" width="100%" alt="">
-						</div>
-					</div>
-				</div>
-				<div class="ant-col-14 ant-col-offset-1 detail-text">
-					<h4>联想 拯救者R720-15IKB(i7 7700HQ) 8GB运行内存</h4>
-					<div class="goods-description">爆款热销2500台!!!</div>
-					<div class="goods-price-wrapper">
-						<span class="goods-detail-label">价格: </span>
-						<span class="goods-price">&yen; 4999</span>
-					</div>
-					<div class="goods-storage-wrapper">
-						<span class="goods-detail-label">库存: </span>
-						<span class="goods-storage">10</span>
-					</div>
-					<div class="buy-number">
-						<span class="goods-detail-label">数量: </span>
-						<input id="buyNum" type="text" name="" value="1" disabled="disabled">
-						<div class="num-change-btn">
-							<span class="change-btn-plus">+</span>
-							<span class="change-btn-minus">-</span>
-						</div>
-					</div>
-					<div class="join-cart"><a href="./shopcart.html">加入购物车</a></div>
-				</div>
-			</div>
-
-			<div class="detail-content">
-				<div class="detail-content-menu">
-					<span>商品详情</span>
-				</div>
-				<div class="detail-content-body">
-					暂无内容!
-				</div>
-			</div>
-		</div>
-		<!-- E goods-detail 商品详情 -->
-
-		<!-- S footer 尾栏 -->
-		<div class="footer-wrapper">
+  <div class="wrapper">
+    <!-- S 特定功能区块 -->
+    <!-- /顶部提示 -->
+    <div id="tips" class="tips-wrapper" style="display: none;">
+      <div class="tips-warning">
+        <i class="fa fa-fw fa-info-circle"></i> <span id="tipsText" class="tips-text"></span>
+      </div>
+    </div>
+    <!-- E 特定功能区块 -->
+    <!-- S header 顶部-->
+    <div class="header-wraper">
+      <div class="header">
+        <div class="ant-row">
+          <div class="ant-col-4">
+            <a href="./login.html" class="header-link">登录</a>
+            <a href="./register.html" class="header-link">注册</a>
+          </div>
+          <div class="ant-col-6 ant-col-offset-14">
+            <div class="ant-row">
+              <a href="" class="ant-col-6 header-link"><i class="fa fa-shopping-cart"></i> 购物车 (0)</a>
+              <a href="" class="ant-col-6 header-link">我的订单</a>
+              <a href="" class="ant-col-6 header-link">我的GShop</a>
+              <a href="" class="ant-col-6 header-link">关于GShop</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- E header 顶部-->
+    <!-- S logo-search Logo及搜索栏-->
+    <div class="logo-search ant-row">
+      <div class="ant-col-6">
+        <div class="logo-wrapper">
+          <a href="./index.html" class="logo"><img src="../image/logo.png" width="120" alt="LOGO"></a>
+        </div>
+      </div>
+      <div class="search-wrapper ant-col-18">
+        <form action="" method="post">
+          <div class="dib-wrapper search">
+            <input placeholder="请输入商品名称" type="text" name="searchText" class="dib search-input" />
+            <button type="submit" class="dib search-btn">
+              <i class="fa fa-search"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- E logo-search Logo及搜索栏-->
+    <!-- S header-nav-wrapper -->
+    <div class="header-nav-wrapper">
+      <div class="header-nav">
+        <a href="./index.html">GShop</a>
+        <i class="fa fa-fw fa-angle-right"></i>
+        <a href="">商品详情</a>
+      </div>
+    </div>
+    <!-- E header-nav-wrapper -->
+    <!-- S goods-detail 商品详情 -->
+    <div class="goods-detail">
+      <div class="detail-show ant-row">
+        <div class="ant-col-9 detail-img-main">
+          <img id="imgMain" src="../image/detail_pc_big_1.jpg" width="100%" height="400" alt="">
+          <div class="ant-row" id="imgSub">
+            <div class="ant-col-6 detail-img-sub">
+              <img src="../image/detail_pc_big_1.jpg" width="100%" alt="">
+            </div>
+            <div class="ant-col-6 detail-img-sub">
+              <img src="../image/detail_pc_big_2.jpg" width="100%" alt="">
+            </div>
+            <div class="ant-col-6 detail-img-sub">
+              <img src="../image/detail_pc_big_3.jpg" width="100%" alt="">
+            </div>
+            <div class="ant-col-6 detail-img-sub">
+              <img src="../image/detail_pc_big_4.jpg" width="100%" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="ant-col-14 ant-col-offset-1 detail-text">
+          <h4>联想 拯救者R720-15IKB(i7 7700HQ) 8GB运行内存</h4>
+          <div class="goods-description">爆款热销2500台!!!</div>
+          <div class="goods-price-wrapper">
+            <span class="goods-detail-label">价格: </span>
+            <span class="goods-price">&yen; 4999</span>
+          </div>
+          <div class="goods-storage-wrapper">
+            <span class="goods-detail-label">库存: </span>
+            <span class="goods-storage">10</span>
+          </div>
+          <div class="buy-number">
+            <span class="goods-detail-label">数量: </span>
+            <input id="buyNum" type="text" name="" value="1" disabled="disabled">
+            <div class="num-change-btn">
+              <span class="change-btn-plus">+</span>
+              <span class="change-btn-minus">-</span>
+            </div>
+          </div>
+          <div class="join-cart"><a href="./shopcart.html">加入购物车</a></div>
+        </div>
+      </div>
+      <div class="detail-content">
+        <div class="detail-content-menu">
+          <span>商品详情</span>
+        </div>
+        <div class="detail-content-body">
+          暂无内容!
+        </div>
+      </div>
+    </div>
+    <!-- E goods-detail 商品详情 -->
+    <!-- S footer 尾栏 -->
+    <div class="footer-wrapper">
       <div class="footer">
         <div class="links ant-row">
-              <div class="ant-col-6">
-                <a target="_blank" href="https://www.baidu.com">百度</a>
-              </div>
-              <div class="ant-col-6">
-                <a target="_blank" href="https://www.jd.com">京东</a>
-              </div>
-              <div class="ant-col-6">
-                <a target="_blank" href="https://www.taobao.com">淘宝</a>
-              </div>
-              <div class="ant-col-6">
-                <a target="_blank" href="https://www.tmall.com">天猫</a>
-              </div>
+          <div class="ant-col-6">
+            <a target="_blank" href="https://www.baidu.com">百度</a>
+          </div>
+          <div class="ant-col-6">
+            <a target="_blank" href="https://www.jd.com">京东</a>
+          </div>
+          <div class="ant-col-6">
+            <a target="_blank" href="https://www.taobao.com">淘宝</a>
+          </div>
+          <div class="ant-col-6">
+            <a target="_blank" href="https://www.tmall.com">天猫</a>
+          </div>
         </div>
         <div class="copyright">
           CopyRight &copy; 2017 AloneWeb All Rights Reserved
         </div>
       </div>
     </div>
-		<!-- E footer 尾栏 -->
-	</div>
-	<script src="../js/jquery-1.12.4.min.js"></script>
-	<script src="../js/bootstrap.js"></script>
-	<script src="../js/MyJsLibs.js"></script>
-	<script src="../js/detail.js"></script>
+    <!-- E footer 尾栏 -->
+  </div>
+  <script src="../js/jquery-1.12.4.min.js"></script>
+  <script src="../js/bootstrap.js"></script>
+  <script src="../js/MyJsLibs.js"></script>
+  <script src="../js/detail.js"></script>
 </body>
+
 </html>

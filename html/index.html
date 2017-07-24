@@ -1,398 +1,390 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>G商城首页</title>
-	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="../css/gshop.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>G商城首页</title>
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/antd_grid.css">
+  <link rel="stylesheet" type="text/css" href="../css/gshop.css">
 </head>
+
 <body>
-	<div class="wrapper">
-
-		<!-- S header 顶部-->
-		<div class="header-wraper">
-			<div class="header">
-				<div class="ant-row">
-					<div class="ant-col-4">	
-						<span class="header-left">
-							<!-- 欢迎 用户名 <a href=""> 退出 </a> -->
-						 	<a href="./login.html" class="header-link">登录</a>
-							<a href="./register.html" class="header-link">注册</a>
-						</span>
-					</div>
-					<div class="ant-col-6 ant-col-offset-14" >
-						<div class="ant-row">
-							<a  href="./shopcart.html" class="ant-col-6 header-link"><i class="fa fa-shopping-cart"></i> 购物车 (0)</a>
-							<a href="./order-list.html" class="ant-col-6 header-link">我的订单</a>
-							<a href="./userinfo.html" class="ant-col-6 header-link">我的GShop</a>
-							<a href="./about.html" class="ant-col-6 header-link">关于GShop</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- E header 顶部-->
-
-		<!-- S logo-search Logo及搜索栏-->
-		<div class="logo-search ant-row">
-			<div class="ant-col-6">
-				<div class="logo-wrapper">
-					<a href="" class="logo"><img src="../image/logo.png" width="120" alt="LOGO"></a>
-				</div>
-			</div>
-			<div class="search-wrapper ant-col-18">
-				 <form action="" method="post">
-				 <div class="dib-wrapper search">
-				    <input placeholder="请输入商品名称" type="text" name="searchText" class="dib search-input"/>
-				    <button type="submit" class="dib search-btn">
-				    	<i class="fa fa-search"></i>
-				    </button>
-			  </div>
-		    </form>
-			</div>
-		</div>
-		<!-- E logo-search Logo及搜索栏-->
-
-		<!-- S menu-carousel 侧边菜单及轮播图-->
-		<div class="menu-carousel ant-row"> 
-			<div class="ant-col-6">
-				<div class="side-menu">
-					<div class="side-menu-li">
-						<a href="" class="side-menu-li-item">手机</a>
-						<a href="" class="side-menu-li-item">数码</a>
-					</div>
-					<div class="side-menu-li">
-						<a href="./list.html" class="side-menu-li-item">电脑</a>
-						<a href="" class="side-menu-li-item">办公配件</a>
-					</div>
-					<div class="side-menu-li">
-						<a href="" class="side-menu-li-item">电视</a>
-						<a href="" class="side-menu-li-item">空调</a>
-						<a href="" class="side-menu-li-item">冰箱</a>
-						<a href="" class="side-menu-li-item">洗衣机</a>
-					</div>
-					<div class="side-menu-li">
-						<a href="" class="side-menu-li-item">厨卫家电</a>
-						<a href="" class="side-menu-li-item">小家电</a>
-					</div>
-					<div class="side-menu-li">
-						<a href="" class="side-menu-li-item">家居</a>
-						<a href="" class="side-menu-li-item">家具</a>
-						<a href="" class="side-menu-li-item">家装</a>
-					</div>
-					<div class="side-menu-li">
-						<a href="" class="side-menu-li-item">个护化妆</a>
-						<a href="" class="side-menu-li-item">清洁</a>
-						<a href="" class="side-menu-li-item">纸品</a>
-					</div>
-					<div class="side-menu-li">
-						<a href="" class="side-menu-li-item">母婴</a>
-						<a href="" class="side-menu-li-item">玩具</a>
-						<a href="" class="side-menu-li-item">童装童鞋</a>
-					</div>
-					<div class="side-menu-li">
-						<a href="" class="side-menu-li-item">鞋靴</a>
-						<a href="" class="side-menu-li-item">箱包</a>
-						<a href="" class="side-menu-li-item">钟表</a>
-						<a href="" class="side-menu-li-item">珠宝</a>
-					</div>
-					<div class="side-menu-li">
-						<a href="" class="side-menu-li-item">运动户外</a>
-						<a href="" class="side-menu-li-item">足球</a>
-						<a href="" class="side-menu-li-item">汽车生活</a>
-					</div>
-					<div class="side-menu-li">
-						<a href="" class="side-menu-li-item">图书</a>
-						<a href="" class="side-menu-li-item">音像</a>
-						<a href="" class="side-menu-li-item">电子书</a>
-					</div>
-				</div>
-			</div>
-			<div id="centerCarousel" class="carousel-wrapper ant-col-18 carousel slide" data-ride="carousel" data-interval="3500">
-				<!-- 轮播（Carousel）指标 -->
-		    <ol class="carousel-indicators">
-		        <li data-target="#centerCarousel" data-slide-to="0" class="active"></li>
-		        <li data-target="#centerCarousel" data-slide-to="1"></li>
-		        <li data-target="#centerCarousel" data-slide-to="2"></li>
-		        <li data-target="#centerCarousel" data-slide-to="3"></li>
-		        <li data-target="#centerCarousel" data-slide-to="4"></li>
-		    </ol>   
-		    <!-- 轮播（Carousel）项目 -->
-		    <div class="carousel-inner">
-		        <div class="item active">
-		            <a href=""><img class="carousel-img" src="../image/carousel_1.jpg" alt=""></a>
-		        </div>
-		        <div class="item">
-		            <a href=""><img class="carousel-img" src="../image/carousel_2.jpg" alt=""></a>
-		        </div>
-		        <div class="item">
-		            <a href=""><img class="carousel-img" src="../image/carousel_3.jpg" alt=""></a>
-		        </div>
-		        <div class="item">
-		            <a href=""><img class="carousel-img" src="../image/carousel_4.jpg" alt=""></a>
-		        </div>
-		        <div class="item">
-		            <a href=""><img class="carousel-img" src="../image/carousel_5.jpg" alt=""></a>
-		        </div>
-		    </div>
-		    <!-- 轮播（Carousel）导航 -->
-		    <a class="carousel-control left" href="#centerCarousel" 
-		        data-slide="prev"><i class="fa fa-angle-left"></i>
-		    </a>
-		    <a class="carousel-control right" href="#centerCarousel" 
-		        data-slide="next"><i class="fa fa-angle-right"></i>
-		    </a>
-			</div>
-		</div>
-		<!-- E menu-carousel 侧边菜单及轮播图-->
-
-		<!-- S goods-cate-wrapper 商品类别-->
-		<div class="goods-cate-wrapper">
-			<!-- /家用电器 -->
-			<div class="goods-cate">
-				<div class="cate-title" style="color:#D58717;border-color:#D58717;"><i class="fa fa-fw fa-television"></i> 家用电器</div>
-				<div class="cate-body ant-row">
-					<div class="ant-col-4 cate-item-wrap">
-						<a href="" class="cate-item">
-							<div class="cate-item-text">冰箱</div>
-							<img src="../image/refrigerator.jpg" width="100%" height="150" alt="">
-						</a>
-					</div>
-					<div class="ant-col-4 cate-item-wrap">
-						<a href="" class="cate-item">
-							<div class="cate-item-text">高清电视</div>
-							<img src="../image/tv.jpg" width="100%" height="150" alt="">
-						</a>
-					</div>
-					<div class="ant-col-4 cate-item-wrap">
-						<a href="" class="cate-item">
-							<div class="cate-item-text">洗衣机</div>
-							<img src="../image/washer.jpg" width="100%" height="150" alt="">
-						</a>
-					</div>
-					<div class="ant-col-4 cate-item-wrap">
-						<a href="" class="cate-item">
-							<div class="cate-item-text">变频空调</div>
-							<img src="../image/aircond.png" width="100%" height="150" alt="">
-						</a>
-					</div>
-					<div class="ant-col-4 cate-item-wrap">
-						<a href="" class="cate-item">
-							<div class="cate-item-text">热水器</div>
-							<img src="../image/waterheater.jpg" width="100%" height="150" alt="">
-						</a>
-					</div>
-					<div class="ant-col-4 cate-item-wrap">
-						<a href="" class="cate-item">
-							<div class="cate-item-text">高档厨卫</div>
-							<img src="../image/kitcen.jpg" width="100%" height="150" alt="">
-						</a>
-					</div>
-				</div>
-			</div>
-
-			<!-- /数码3C -->			
-			<div class="goods-cate">
-				<div class="cate-title" style="color:#3B838C;border-color:#3B838C;"><i class="fa fa-fw fa-camera"></i> 数码3C</div>
-				<div class="cate-body ant-row">
-					<div class="ant-col-4 cate-item-wrap">
-						<a href="" class="cate-item">
-							<div class="cate-item-text">笔记本</div>
-							<img src="../image/laptop.jpg" width="100%" height="150" alt="">
-						</a>
-					</div>
-					<div class="ant-col-4 cate-item-wrap">
-						<a href="" class="cate-item">
-							<div class="cate-item-text">台式电脑</div>
-							<img src="../image/desktop.jpg" width="100%" height="150" alt="">
-						</a>
-					</div>
-					<div class="ant-col-4 cate-item-wrap">
-						<a href="" class="cate-item">
-							<div class="cate-item-text">手机通讯</div>
-							<img src="../image/mobile.jpg" width="100%" height="150" alt="">
-						</a>
-					</div>
-					<div class="ant-col-4 cate-item-wrap">
-						<a href="" class="cate-item">
-							<div class="cate-item-text">平板电脑</div>
-							<img src="../image/tablet.jpg" width="100%" height="150" alt="">
-						</a>
-					</div>
-					<div class="ant-col-4 cate-item-wrap">
-						<a href="" class="cate-item">
-							<div class="cate-item-text">数码相机</div>
-							<img src="../image/digCar.jpg" width="100%" height="150" alt="">
-						</a>
-					</div>
-					<div class="ant-col-4 cate-item-wrap">
-						<a href="" class="cate-item">
-							<div class="cate-item-text">3C配件</div>
-							<img src="../image/3Cplug.jpg" width="100%" height="150" alt="">
-						</a>
-					</div>
-				</div>
-			</div>
-
-			<!-- /服装箱包 -->
-			<div class="goods-cate">
-				<div class="cate-title" style="color:#A93931;border-color:#A93931;"><i class="fa fa-fw fa-suitcase"></i> 服装箱包</div>
-				<div class="cate-body ant-row">
-					<div class="ant-col-4 cate-item-wrap">
-						<a href="" class="cate-item">
-							<div class="cate-item-text">女装</div>
-							<img src="../image/wocloth.jpg" width="100%" height="150" alt="">
-						</a>
-					</div>
-					<div class="ant-col-4 cate-item-wrap">
-						<a href="" class="cate-item">
-							<div class="cate-item-text">男装</div>
-							<img src="../image/mcloth.jpg" width="100%" height="150" alt="">
-						</a>
-					</div>
-					<div class="ant-col-4 cate-item-wrap">
-						<a href="" class="cate-item">
-							<div class="cate-item-text">旅行箱</div>
-							<img src="../image/suitcase.jpg" width="100%" height="150" alt="">
-						</a>
-					</div>
-					<div class="ant-col-4 cate-item-wrap">
-						<a href="" class="cate-item">
-							<div class="cate-item-text">手提包</div>
-							<img src="../image/handbag.jpg" width="100%" height="150" alt="">
-						</a>
-					</div>
-					<div class="ant-col-4 cate-item-wrap">
-						<a href="" class="cate-item">
-							<div class="cate-item-text">保暖内衣</div>
-							<img src="../image/thermalUnderwear.jpg" width="100%" height="150" alt="">
-						</a>
-					</div>
-					<div class="ant-col-4 cate-item-wrap">
-						<a href="" class="cate-item">
-							<div class="cate-item-text">帽子专区</div>
-							<img src="../image/hat.jpg" width="100%" height="150" alt="">
-						</a>
-					</div>
-				</div>
-			</div>
-
-			<!-- /食品生鲜 -->
-			<div class="goods-cate">
-				<div class="cate-title" style="color:#488BAD;border-color:#488BAD;"><i class="fa fa-fw fa-cutlery"></i> 食品生鲜</div>
-				<div class="cate-body ant-row">
-					<div class="ant-col-4 cate-item-wrap">
-						<a href="" class="cate-item">
-							<div class="cate-item-text">最爱零食</div>
-							<img src="../image/snacks.jpg" width="100%" height="150" alt="">
-						</a>
-					</div>
-					<div class="ant-col-4 cate-item-wrap">
-						<a href="" class="cate-item">
-							<div class="cate-item-text">生鲜</div>
-							<img src="../image/fresh.jpg" width="100%" height="150" alt="">
-						</a>
-					</div>
-					<div class="ant-col-4 cate-item-wrap">
-						<a href="" class="cate-item">
-							<div class="cate-item-text">半成品菜</div>
-							<img src="../image/dish.jpg" width="100%" height="150" alt="">
-						</a>
-					</div>
-					<div class="ant-col-4 cate-item-wrap">
-						<a href="" class="cate-item">
-							<div class="cate-item-text">速冻专区</div>
-							<img src="../image/frozen.jpg" width="100%" height="150" alt="">
-						</a>
-					</div>
-					<div class="ant-col-4 cate-item-wrap">
-						<a href="" class="cate-item">
-							<div class="cate-item-text">进口食品</div>
-							<img src="../image/importedfood.jpg" width="100%" height="150" alt="">
-						</a>
-					</div>
-					<div class="ant-col-4 cate-item-wrap">
-						<a href="" class="cate-item">
-							<div class="cate-item-text">滋养补品</div>
-							<img src="../image/tonic.jpg" width="100%" height="150" alt="">
-						</a>
-					</div>
-				</div>
-			</div>
-
-			<!-- /酒水饮料 -->
-			<div class="goods-cate">
-				<div class="cate-title" style="color:#642663;border-color:#642663;"><i class="fa fa-fw fa-coffee"></i> 酒水饮料</div>
-				<div class="cate-body ant-row">
-					<div class="ant-col-4 cate-item-wrap">
-						<a href="" class="cate-item">
-							<div class="cate-item-text">白酒</div>
-							<img src="../image/Whitewine.jpg" width="100%" height="150" alt="">
-						</a>
-					</div>
-					<div class="ant-col-4 cate-item-wrap">
-						<a href="" class="cate-item">
-							<div class="cate-item-text">红酒</div>
-							<img src="../image/Redwine.jpg" width="100%" height="150" alt="">
-						</a>
-					</div>
-					<div class="ant-col-4 cate-item-wrap">
-						<a href="" class="cate-item">
-							<div class="cate-item-text">饮料</div>
-							<img src="../image/drink.jpg" width="100%" height="150" alt="">
-						</a>
-					</div>
-					<div class="ant-col-4 cate-item-wrap">
-						<a href="" class="cate-item">
-							<div class="cate-item-text">调制鸡尾酒</div>
-							<img src="../image/aircond.png" width="100%" height="150" alt="">
-						</a>
-					</div>
-					<div class="ant-col-4 cate-item-wrap">
-						<a href="" class="cate-item">
-							<div class="cate-item-text">进口洋酒</div>
-							<img src="../image/cocktail.jpg" width="100%" height="150" alt="">
-						</a>
-					</div>
-					<div class="ant-col-4 cate-item-wrap">
-						<a href="" class="cate-item">
-							<div class="cate-item-text">茗茶</div>
-							<img src="../image/tea.jpg" width="100%" height="150" alt="">
-						</a>
-					</div>
-				</div>
-			</div>
-
-		</div>
-		<!-- E goods-cate-wrapper 商品类别-->
-
-		<!-- S footer 尾栏 -->
-		<div class="footer-wrapper">
+  <div class="wrapper">
+    <!-- S header 顶部-->
+    <div class="header-wraper">
+      <div class="header">
+        <div class="ant-row">
+          <div class="ant-col-4">
+            <span class="header-left">
+                            <!-- 欢迎 用户名 <a href=""> 退出 </a> -->
+                            <a href="./login.html" class="header-link">登录</a>
+                            <a href="./register.html" class="header-link">注册</a>
+                        </span>
+          </div>
+          <div class="ant-col-6 ant-col-offset-14">
+            <div class="ant-row">
+              <a href="./shopcart.html" class="ant-col-6 header-link"><i class="fa fa-shopping-cart"></i> 购物车 (0)</a>
+              <a href="./order-list.html" class="ant-col-6 header-link">我的订单</a>
+              <a href="./userinfo.html" class="ant-col-6 header-link">我的GShop</a>
+              <a href="./about.html" class="ant-col-6 header-link">关于GShop</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- E header 顶部-->
+    <!-- S logo-search Logo及搜索栏-->
+    <div class="logo-search ant-row">
+      <div class="ant-col-6">
+        <div class="logo-wrapper">
+          <a href="" class="logo"><img src="../image/logo.png" width="120" alt="LOGO"></a>
+        </div>
+      </div>
+      <div class="search-wrapper ant-col-18">
+        <form action="" method="post">
+          <div class="dib-wrapper search">
+            <input placeholder="请输入商品名称" type="text" name="searchText" class="dib search-input" />
+            <button type="submit" class="dib search-btn">
+              <i class="fa fa-search"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- E logo-search Logo及搜索栏-->
+    <!-- S menu-carousel 侧边菜单及轮播图-->
+    <div class="menu-carousel ant-row">
+      <div class="ant-col-6">
+        <div class="side-menu">
+          <div class="side-menu-li">
+            <a href="" class="side-menu-li-item">手机</a>
+            <a href="" class="side-menu-li-item">数码</a>
+          </div>
+          <div class="side-menu-li">
+            <a href="./list.html" class="side-menu-li-item">电脑</a>
+            <a href="" class="side-menu-li-item">办公配件</a>
+          </div>
+          <div class="side-menu-li">
+            <a href="" class="side-menu-li-item">电视</a>
+            <a href="" class="side-menu-li-item">空调</a>
+            <a href="" class="side-menu-li-item">冰箱</a>
+            <a href="" class="side-menu-li-item">洗衣机</a>
+          </div>
+          <div class="side-menu-li">
+            <a href="" class="side-menu-li-item">厨卫家电</a>
+            <a href="" class="side-menu-li-item">小家电</a>
+          </div>
+          <div class="side-menu-li">
+            <a href="" class="side-menu-li-item">家居</a>
+            <a href="" class="side-menu-li-item">家具</a>
+            <a href="" class="side-menu-li-item">家装</a>
+          </div>
+          <div class="side-menu-li">
+            <a href="" class="side-menu-li-item">个护化妆</a>
+            <a href="" class="side-menu-li-item">清洁</a>
+            <a href="" class="side-menu-li-item">纸品</a>
+          </div>
+          <div class="side-menu-li">
+            <a href="" class="side-menu-li-item">母婴</a>
+            <a href="" class="side-menu-li-item">玩具</a>
+            <a href="" class="side-menu-li-item">童装童鞋</a>
+          </div>
+          <div class="side-menu-li">
+            <a href="" class="side-menu-li-item">鞋靴</a>
+            <a href="" class="side-menu-li-item">箱包</a>
+            <a href="" class="side-menu-li-item">钟表</a>
+            <a href="" class="side-menu-li-item">珠宝</a>
+          </div>
+          <div class="side-menu-li">
+            <a href="" class="side-menu-li-item">运动户外</a>
+            <a href="" class="side-menu-li-item">足球</a>
+            <a href="" class="side-menu-li-item">汽车生活</a>
+          </div>
+          <div class="side-menu-li">
+            <a href="" class="side-menu-li-item">图书</a>
+            <a href="" class="side-menu-li-item">音像</a>
+            <a href="" class="side-menu-li-item">电子书</a>
+          </div>
+        </div>
+      </div>
+      <div id="centerCarousel" class="carousel-wrapper ant-col-18 carousel slide" data-ride="carousel" data-interval="3500">
+        <!-- 轮播（Carousel）指标 -->
+        <ol class="carousel-indicators">
+          <li data-target="#centerCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#centerCarousel" data-slide-to="1"></li>
+          <li data-target="#centerCarousel" data-slide-to="2"></li>
+          <li data-target="#centerCarousel" data-slide-to="3"></li>
+          <li data-target="#centerCarousel" data-slide-to="4"></li>
+        </ol>
+        <!-- 轮播（Carousel）项目 -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <a href=""><img class="carousel-img" src="../image/carousel_1.jpg" alt=""></a>
+          </div>
+          <div class="item">
+            <a href=""><img class="carousel-img" src="../image/carousel_2.jpg" alt=""></a>
+          </div>
+          <div class="item">
+            <a href=""><img class="carousel-img" src="../image/carousel_3.jpg" alt=""></a>
+          </div>
+          <div class="item">
+            <a href=""><img class="carousel-img" src="../image/carousel_4.jpg" alt=""></a>
+          </div>
+          <div class="item">
+            <a href=""><img class="carousel-img" src="../image/carousel_5.jpg" alt=""></a>
+          </div>
+        </div>
+        <!-- 轮播（Carousel）导航 -->
+        <a class="carousel-control left" href="#centerCarousel" data-slide="prev"><i class="fa fa-angle-left"></i>
+            </a>
+        <a class="carousel-control right" href="#centerCarousel" data-slide="next"><i class="fa fa-angle-right"></i>
+            </a>
+      </div>
+    </div>
+    <!-- E menu-carousel 侧边菜单及轮播图-->
+    <!-- S goods-cate-wrapper 商品类别-->
+    <div class="goods-cate-wrapper">
+      <!-- /家用电器 -->
+      <div class="goods-cate">
+        <div class="cate-title" style="color:#D58717;border-color:#D58717;"><i class="fa fa-fw fa-television"></i> 家用电器</div>
+        <div class="cate-body ant-row">
+          <div class="ant-col-4 cate-item-wrap">
+            <a href="" class="cate-item">
+              <div class="cate-item-text">冰箱</div>
+              <img src="../image/refrigerator.jpg" width="100%" height="150" alt="">
+            </a>
+          </div>
+          <div class="ant-col-4 cate-item-wrap">
+            <a href="" class="cate-item">
+              <div class="cate-item-text">高清电视</div>
+              <img src="../image/tv.jpg" width="100%" height="150" alt="">
+            </a>
+          </div>
+          <div class="ant-col-4 cate-item-wrap">
+            <a href="" class="cate-item">
+              <div class="cate-item-text">洗衣机</div>
+              <img src="../image/washer.jpg" width="100%" height="150" alt="">
+            </a>
+          </div>
+          <div class="ant-col-4 cate-item-wrap">
+            <a href="" class="cate-item">
+              <div class="cate-item-text">变频空调</div>
+              <img src="../image/aircond.png" width="100%" height="150" alt="">
+            </a>
+          </div>
+          <div class="ant-col-4 cate-item-wrap">
+            <a href="" class="cate-item">
+              <div class="cate-item-text">热水器</div>
+              <img src="../image/waterheater.jpg" width="100%" height="150" alt="">
+            </a>
+          </div>
+          <div class="ant-col-4 cate-item-wrap">
+            <a href="" class="cate-item">
+              <div class="cate-item-text">高档厨卫</div>
+              <img src="../image/kitcen.jpg" width="100%" height="150" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- /数码3C -->
+      <div class="goods-cate">
+        <div class="cate-title" style="color:#3B838C;border-color:#3B838C;"><i class="fa fa-fw fa-camera"></i> 数码3C</div>
+        <div class="cate-body ant-row">
+          <div class="ant-col-4 cate-item-wrap">
+            <a href="" class="cate-item">
+              <div class="cate-item-text">笔记本</div>
+              <img src="../image/laptop.jpg" width="100%" height="150" alt="">
+            </a>
+          </div>
+          <div class="ant-col-4 cate-item-wrap">
+            <a href="" class="cate-item">
+              <div class="cate-item-text">台式电脑</div>
+              <img src="../image/desktop.jpg" width="100%" height="150" alt="">
+            </a>
+          </div>
+          <div class="ant-col-4 cate-item-wrap">
+            <a href="" class="cate-item">
+              <div class="cate-item-text">手机通讯</div>
+              <img src="../image/mobile.jpg" width="100%" height="150" alt="">
+            </a>
+          </div>
+          <div class="ant-col-4 cate-item-wrap">
+            <a href="" class="cate-item">
+              <div class="cate-item-text">平板电脑</div>
+              <img src="../image/tablet.jpg" width="100%" height="150" alt="">
+            </a>
+          </div>
+          <div class="ant-col-4 cate-item-wrap">
+            <a href="" class="cate-item">
+              <div class="cate-item-text">数码相机</div>
+              <img src="../image/digCar.jpg" width="100%" height="150" alt="">
+            </a>
+          </div>
+          <div class="ant-col-4 cate-item-wrap">
+            <a href="" class="cate-item">
+              <div class="cate-item-text">3C配件</div>
+              <img src="../image/3Cplug.jpg" width="100%" height="150" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- /服装箱包 -->
+      <div class="goods-cate">
+        <div class="cate-title" style="color:#A93931;border-color:#A93931;"><i class="fa fa-fw fa-suitcase"></i> 服装箱包</div>
+        <div class="cate-body ant-row">
+          <div class="ant-col-4 cate-item-wrap">
+            <a href="" class="cate-item">
+              <div class="cate-item-text">女装</div>
+              <img src="../image/wocloth.jpg" width="100%" height="150" alt="">
+            </a>
+          </div>
+          <div class="ant-col-4 cate-item-wrap">
+            <a href="" class="cate-item">
+              <div class="cate-item-text">男装</div>
+              <img src="../image/mcloth.jpg" width="100%" height="150" alt="">
+            </a>
+          </div>
+          <div class="ant-col-4 cate-item-wrap">
+            <a href="" class="cate-item">
+              <div class="cate-item-text">旅行箱</div>
+              <img src="../image/suitcase.jpg" width="100%" height="150" alt="">
+            </a>
+          </div>
+          <div class="ant-col-4 cate-item-wrap">
+            <a href="" class="cate-item">
+              <div class="cate-item-text">手提包</div>
+              <img src="../image/handbag.jpg" width="100%" height="150" alt="">
+            </a>
+          </div>
+          <div class="ant-col-4 cate-item-wrap">
+            <a href="" class="cate-item">
+              <div class="cate-item-text">保暖内衣</div>
+              <img src="../image/thermalUnderwear.jpg" width="100%" height="150" alt="">
+            </a>
+          </div>
+          <div class="ant-col-4 cate-item-wrap">
+            <a href="" class="cate-item">
+              <div class="cate-item-text">帽子专区</div>
+              <img src="../image/hat.jpg" width="100%" height="150" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- /食品生鲜 -->
+      <div class="goods-cate">
+        <div class="cate-title" style="color:#488BAD;border-color:#488BAD;"><i class="fa fa-fw fa-cutlery"></i> 食品生鲜</div>
+        <div class="cate-body ant-row">
+          <div class="ant-col-4 cate-item-wrap">
+            <a href="" class="cate-item">
+              <div class="cate-item-text">最爱零食</div>
+              <img src="../image/snacks.jpg" width="100%" height="150" alt="">
+            </a>
+          </div>
+          <div class="ant-col-4 cate-item-wrap">
+            <a href="" class="cate-item">
+              <div class="cate-item-text">生鲜</div>
+              <img src="../image/fresh.jpg" width="100%" height="150" alt="">
+            </a>
+          </div>
+          <div class="ant-col-4 cate-item-wrap">
+            <a href="" class="cate-item">
+              <div class="cate-item-text">半成品菜</div>
+              <img src="../image/dish.jpg" width="100%" height="150" alt="">
+            </a>
+          </div>
+          <div class="ant-col-4 cate-item-wrap">
+            <a href="" class="cate-item">
+              <div class="cate-item-text">速冻专区</div>
+              <img src="../image/frozen.jpg" width="100%" height="150" alt="">
+            </a>
+          </div>
+          <div class="ant-col-4 cate-item-wrap">
+            <a href="" class="cate-item">
+              <div class="cate-item-text">进口食品</div>
+              <img src="../image/importedfood.jpg" width="100%" height="150" alt="">
+            </a>
+          </div>
+          <div class="ant-col-4 cate-item-wrap">
+            <a href="" class="cate-item">
+              <div class="cate-item-text">滋养补品</div>
+              <img src="../image/tonic.jpg" width="100%" height="150" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- /酒水饮料 -->
+      <div class="goods-cate">
+        <div class="cate-title" style="color:#642663;border-color:#642663;"><i class="fa fa-fw fa-coffee"></i> 酒水饮料</div>
+        <div class="cate-body ant-row">
+          <div class="ant-col-4 cate-item-wrap">
+            <a href="" class="cate-item">
+              <div class="cate-item-text">白酒</div>
+              <img src="../image/Whitewine.jpg" width="100%" height="150" alt="">
+            </a>
+          </div>
+          <div class="ant-col-4 cate-item-wrap">
+            <a href="" class="cate-item">
+              <div class="cate-item-text">红酒</div>
+              <img src="../image/Redwine.jpg" width="100%" height="150" alt="">
+            </a>
+          </div>
+          <div class="ant-col-4 cate-item-wrap">
+            <a href="" class="cate-item">
+              <div class="cate-item-text">饮料</div>
+              <img src="../image/drink.jpg" width="100%" height="150" alt="">
+            </a>
+          </div>
+          <div class="ant-col-4 cate-item-wrap">
+            <a href="" class="cate-item">
+              <div class="cate-item-text">调制鸡尾酒</div>
+              <img src="../image/aircond.png" width="100%" height="150" alt="">
+            </a>
+          </div>
+          <div class="ant-col-4 cate-item-wrap">
+            <a href="" class="cate-item">
+              <div class="cate-item-text">进口洋酒</div>
+              <img src="../image/cocktail.jpg" width="100%" height="150" alt="">
+            </a>
+          </div>
+          <div class="ant-col-4 cate-item-wrap">
+            <a href="" class="cate-item">
+              <div class="cate-item-text">茗茶</div>
+              <img src="../image/tea.jpg" width="100%" height="150" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- E goods-cate-wrapper 商品类别-->
+    <!-- S footer 尾栏 -->
+    <div class="footer-wrapper">
       <div class="footer">
         <div class="links ant-row">
-              <div class="ant-col-6">
-                <a target="_blank" href="https://www.baidu.com">百度</a>
-              </div>
-              <div class="ant-col-6">
-                <a target="_blank" href="https://www.jd.com">京东</a>
-              </div>
-              <div class="ant-col-6">
-                <a target="_blank" href="https://www.taobao.com">淘宝</a>
-              </div>
-              <div class="ant-col-6">
-                <a target="_blank" href="https://www.tmall.com">天猫</a>
-              </div>
+          <div class="ant-col-6">
+            <a target="_blank" href="https://www.baidu.com">百度</a>
+          </div>
+          <div class="ant-col-6">
+            <a target="_blank" href="https://www.jd.com">京东</a>
+          </div>
+          <div class="ant-col-6">
+            <a target="_blank" href="https://www.taobao.com">淘宝</a>
+          </div>
+          <div class="ant-col-6">
+            <a target="_blank" href="https://www.tmall.com">天猫</a>
+          </div>
         </div>
         <div class="copyright">
           CopyRight &copy; 2017 AloneWeb All Rights Reserved
         </div>
       </div>
     </div>
-		<!-- E footer 尾栏 -->
-	</div>
-	<script src="../js/jquery-1.12.4.min.js"></script>
-	<script src="../js/bootstrap.js"></script>
+    <!-- E footer 尾栏 -->
+  </div>
+  <script src="../js/jquery-1.12.4.min.js"></script>
+  <script src="../js/bootstrap.js"></script>
 </body>
+
 </html>
