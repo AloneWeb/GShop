@@ -3,9 +3,7 @@
 ### 简介
     完整的商城系统前端，包含了大部分前端验证和交互
 
-### Demo
-
-[项目Demo](https://aloneweb.github.io/GShop/html/)
+### [Demo](https://aloneweb.github.io/GShop/html/)
 
 > 因为是静态界面并未对接后台，可能有未链接的界面，在此列出所有的界面链接，
 > 注:首页只有'电脑'可以进入商品列表
