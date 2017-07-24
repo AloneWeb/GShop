@@ -1,4 +1,10 @@
+/**
+ * 城市三级联动插件
+ */
+
 var citySelect = function(){
+  //json数据
+  //数据来源:https://github.com/modood/Administrative-divisions-of-China
   var citysObj = {
     "北京市": {
       "市辖区": ["东城区", "西城区", "朝阳区", "丰台区", "石景山区", "海淀区", "门头沟区", "房山区", "通州区", "顺义区", "昌平区", "大兴区", "怀柔区", "平谷区", "密云区", "延庆区"]

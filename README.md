@@ -36,7 +36,3 @@
 - scss、js代码待优化
 - 没有密码找回、支付界面
 - 还有很多细节问题有待处理...
-
-### 界面参考
-
-[Mall电商平台](http://happymmall.com/index.html)
