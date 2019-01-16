@@ -22,9 +22,9 @@
 
 ### 用到的技术
 
-    UI库:bootstrap、Antd的栅格系统
+    UI库: bootstrap、Antd的栅格系统
 
-    js库:jQuery
+    js库: jQuery
 
     css预处理：Sass
 
@@ -40,4 +40,6 @@
 
 ### 后台版本
 此项目为前端版本，后台代码未上传（在优化），数据使用的是导入的测试数据（暂无后台管理系统）
-预览地址 http://120.79.216.145:7001/login
+用户名： test
+密码：test
+预览地址 http://119.23.235.128:7001/login
